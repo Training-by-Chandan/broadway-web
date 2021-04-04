@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broadway.Web", "Broadway.Web\Broadway.Web.csproj", "{D7240583-6728-49BB-A14C-9C55AE8A3503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7240583-6728-49BB-A14C-9C55AE8A3503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7240583-6728-49BB-A14C-9C55AE8A3503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7240583-6728-49BB-A14C-9C55AE8A3503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7240583-6728-49BB-A14C-9C55AE8A3503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DFFFE56-BBB9-4442-88D2-982E999B0506}
+	EndGlobalSection
+EndGlobal
