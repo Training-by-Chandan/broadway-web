@@ -1,0 +1,40 @@
+﻿@model Broadway.Web.ViewModel.LoginResultViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@*<h3>@ViewBag.Saroj</h3>
+<h3>@ViewBag.Bikram</h3>
+<h3>@ViewBag.Kamlesh</h3>
+<h3>@ViewData["Chandan"]</h3>*@
+
+@if (Model != null)
+{
+    <h3>@Model.Message</h3>
+    <h3>@Model.Username</h3>
+
+}
+<h2>Login</h2>
+<br />
+<form action="~/home/Login" method="post">
+    <div class="row">
+        <input type="text" placeholder="Name" name="New[0].Name" />
+    </div>
+    <div class="row">
+        <input type="text" placeholder="Name" name="New[1].Name" />
+    </div>
+    <div class="row">
+        <input type="text" placeholder="status" name="Status" />
+    </div>
+    <div class="row">
+        <input type="text" placeholder="Username" name="username" />
+    </div>
+    <div class="row">
+        <input type="password" placeholder="Password" name="password" />
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit" />
+    </div>
+</form>
+

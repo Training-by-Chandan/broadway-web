@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Broadway.Web.ViewModel;
 
 namespace Broadway.Web.Controllers
 {
@@ -12,7 +9,7 @@ namespace Broadway.Web.Controllers
         {
             return View();
         }
-        
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -30,6 +27,26 @@ namespace Broadway.Web.Controllers
         public ActionResult Bikram()
         {
             return View("~/Views/Student/BikramSharma.cshtml");
+        }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginViewModel model)
+        {
+            ViewBag.Kamlesh = "My Name is Kamlesh";
+            ViewBag.Bikram = "My Name is Bikram";
+            ViewBag.Saroj = "My Name is Saroj";
+
+            ViewData["Chandan"] = "My Name is Chandan";
+            var result = new LoginResultViewModel();
+            result.Message = "You have successfully logged in";
+            result.Username = model.Username;
+
+            return View(result);
         }
     }
 }
